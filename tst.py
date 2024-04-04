@@ -40,7 +40,7 @@ def train_step(policy, state, optimizer):
 
     return new_state, reward, done
 
-
+    
 env = gym.make('CartPole-v1')
 policy = PolicyNetwork()
 optimizer = optim.Adam(policy.parameters(), lr=0.01)
